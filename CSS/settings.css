@@ -43,25 +43,18 @@ body{
   height:50px;
   width:50px;
 }
-.container{
-  padding:15px;
-}
 .options-bar{
   background-color: #f1f1f1;
   padding:5px;
   border-bottom: 1px solid grey;
 }
 .option{
-  color:black;
   padding:5px;
   margin-left:30px;
 }
 .option:hover{
   cursor:pointer;
   border-bottom:2px solid grey;
-}
-.option-selected:hover{
-  cursor:pointer;
 }
 .option-selected{
   border-bottom:2px solid #fe5e00;
@@ -70,25 +63,22 @@ body{
 }
 
 .buttons{
-  font-size: x-small;
+  font-size: small;
   text-align: center;
   color:black;
   padding:5px;
   background-color:#f1f1f1;
   border-radius: 5px;
   border: 1px solid black;
-  width:88px;
+  width:90px;
   height:18px;
-  display:inline-block;
+  display: inline-block;
 }
 .button-container{
-  padding-bottom:30px;
+  float:right;
   height:35px;
 }
-.buttons:hover{
-  cursor: pointer;
-  background-color: #c1c1c1;
-}
+
 .side{
   padding:20px;
   float:left;
@@ -135,10 +125,11 @@ body{
   width:50%;
   padding:20px;
 }
-.data-container{
-  margin-top:20px;
-  height:100%;
-  width:100%;
+.container{
+  float:left;
+  margin-top:10px;
+  padding:25px;
+
 }
 .top-slide{
   border-top-left-radius: 7px;
@@ -149,39 +140,59 @@ body{
   padding-bottom:15px;
   font-weight: bold;
 }
-.slide{
+.title-input{
   border:1px solid grey;
-  padding:10px;
-  border-top: none;
-  font-size: small;
-}
-.create-r{
-  text-decoration: none;
-  font-size: small;
-}
-.create-r:hover{
-  color:grey;
-}
-.readme{
-  border:1px solid grey;
-  min-height:50%;
   padding:7px;
-  border-top: none;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  padding-bottom: 5px;
+  width:600px;
 }
-.last-slide{
+.title-input:focus{
+  outline: none;
+}
+.desc-input{
+  border:1px solid black;
+  border-radius: 5px;
+  padding:5px;
+}
+.name-input{
+  border:1px solid black;
+  border-radius: 5px;
+  padding:5px;
+}
+.name-input:focus{
+  outline: none;
+  border:1px solid blue;
+}
+.danger{
+  border:1px solid red;
+  padding:5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.desc-input:focus{
+  outline: none;
+}
+.danger-msg{
+  padding-top:5px;
+  text-align: center;
   font-size: small;
-  border:1px solid grey;
-  border-top: none;
-  padding:10px;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
 }
-.slide:hover{
+.button{
+  border:1px solid black;
   background-color: #f1f1f1;
+  border-radius: 5px;
+  color:black;
+  text-align: center;
+  margin-top: 5px;
+  padding-top:5px;
+  padding-bottom:5px;
+  width:120px;
 }
-.last-slide:hover{
-  background-color: #f1f1f1;
+.button:hover{
+  background-color: #d1d1d1;
+  cursor:pointer;
+}
+.image{
+  border:1px solid black;
+  height:100%;
+  width:100%;
 }

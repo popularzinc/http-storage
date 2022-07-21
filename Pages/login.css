@@ -1,0 +1,57 @@
+body{
+  background: linear-gradient(160deg,#2e2e2e, #818181 );
+  margin:0;
+  padding:0;
+  font-family: Sans-serif;
+  height:100vh;
+}
+.container{
+  width:400px;
+  height:500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.title{
+  color:white;
+  font-size: 70px;
+}
+.message{
+  color:white;
+}
+.input-box{
+  background-color: #f1f1f1;
+  border:none;
+  border-radius: 10px;
+  padding:15px;
+  width:250px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: grey;
+}
+.input-box:focus{
+  border: 1px solid white;
+  resize: none;
+  outline: none;
+}
+
+.input-button:focus{
+  border: 1px solid white;
+  resize: none;
+  outline: none;
+}
+.link{
+  color:green;
+}
+.input-button{
+  color:white;
+  border:none;
+  border-radius: 10px;
+  width:280px;
+  padding:15px;
+  background-color: green;
+
+}

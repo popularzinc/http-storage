@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="edit.css">
+    <div class="top-bar">
+      <input class="search-bar" type="text" placeholder="Search..">
+    </div>
+  </head>
+  <body>
+    <div class="project-top">
+      <a href="/">
+        <img class="title-folder" src="/pics/title-folder.png">
+      </a>
+      <span class="title">README.md</span>
+    </div>
+
+    <div class="options-bar">
+      <span class="option-selected">Data</span>
+      <span class="option">Settings</span>
+    </div>
+    <div class="container">
+      <!---->
+
+    <form method="POST">
+      Editing: <b>FILE_NAME</b><br><br>
+      <div class="options-container">
+        <a class="link" href="BACK_LINK">
+          <div class="options-button">Back</div>
+        </a>
+        <input style="padding-bottom:26px;" class="options-button" type=submit value="Save">
+        <a class="link" href="DOWN_LINK">
+          <div class="options-button">Download</div>
+        </a>
+        <a class="link" href="DEL_LINK">
+          <div class="options-button">Delete</div>
+        </a>
+      </div>
+      <div>
+        <input name="title" class="title-input" type="text" value="FILE_NAME" placeholder="FILE_NAME">
+        <br>
+        <img class="image" src="IMAGE_SRC">
+      </div>
+    </form>
+    <!---->
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="settings.css">
+    <div class="top-bar">
+      <input class="search-bar" type="text" placeholder="Search..">
+    </div>
+  </head>
+  <body>
+    <div class="project-top">
+      <a href="/">
+        <img class="title-folder" src="/pics/title-folder.png">
+      </a>
+      <span class="title">README.md</span>
+    </div>
+
+    <div class="options-bar">
+      <span class="option-selected">Data</span>
+      <span class="option">Settings</span>
+    </div>
+    <div class="container">
+<!---->
+      <div><b>Settings</b></div><br>
+      Date Created: <b>DATE</b>
+      <br><br>
+      <form method=POST>
+        <input type="checkbox" name="backup" value="backup" BCHKD>
+        <label for="backup">Backup</label>
+        <br>
+        <input type="checkbox" name="public" value="public" PCHKD>
+        <label for="public">Public</label>
+        <br><br>
+        <b style="font-size:small;">Project Title</b><br>
+        <input name="name" class="name-input" value="PROJECT_NAME"><br><br>
+        <b style="font-size:small;">Description</b><br>
+        <textarea name="desc" rows=3 cols=35 class="desc-input">DESC</textarea><br>
+        <input type=submit class="button" value="Update"><br><br>
+      </form>
+      <br><br>
+      Danger Zone<br><br>
+      <div class="danger">
+        <form action="DEL_LINK" method=POST>
+          <input class="name-input" name="data" placeholder="PROJECT_NAME">
+          <input type=submit class="button" style="color:red;" value="Delete Project"><br>
+        </form>
+        <div class="danger-msg">Permantly Delete Project, this will erase it forever. Be sure.</div>
+      </div>
+      <br>
+<!---->
+    </div>
+  </body>
+</html>

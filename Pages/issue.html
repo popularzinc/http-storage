@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="issue.css">
+    <div class="top-bar">
+      <input class="search-bar" type="text" placeholder="Search..">
+    </div>
+  </head>
+  <body>
+    <div class="project-top">
+      <a href="/">
+        <img class="title-folder" src="/pics/title-folder.png">
+      </a>
+      <span class="title">Project Issues</span>
+    </div>
+
+    <div class="options-bar">
+      <span class="option-selected">Data</span>
+      <span class="option">Settings</span>
+    </div>
+    <div class="container">
+      <!---->
+      <form method=POST>
+        <input type="checkbox" name="done" value="done">
+        <label for="done"> Finished</label><br><br>
+        <input type=submit value="Update/Submit"><br><br>
+
+        <div class="info">Title</div>
+        <input class="issue-title" name="title" placeholder="TITLE" value="TITLE">
+        <br><br>
+        <div class="info">Description</div>
+        <input class="issue-desc" name="desc" placeholder="DESC" value="DESC">
+        <br><br>
+        <div class="info">Progress</div>
+        <textarea rows=20 cols=63 name="data" class="progress">DATA</textarea><br><br><br>
+        <input class="file" name="file" placeholder="Filename" value="FILE"><br><br>
+        <div style="display:inline-flex;">
+          <div style="text-align:center;">
+            <div class="info">Old Code</div><br>
+            <textarea name="code1" rows=20 cols=30 class="code1">CODE1</textarea>
+          </div>
+          <div style="text-align:center;">
+            <div class="info">New Code</div><br>
+            <textarea name="code2" rows=20 cols=30 class="code2">CODE2</textarea>
+          </div>
+        </div>
+      </form>
+      <br><br>
+      <div class="danger">
+        <form action="/deleteissue/PROJECT/TITLE" method=POST>
+          <input type=text name="name" placeholder="TITLE">
+          <input type=submit value="Delete Issue">
+        </form>
+      </div>
+    <!---->
+
+    </div>
+  </body>
+</html>

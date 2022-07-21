@@ -60,6 +60,7 @@ body{
   color:grey;
 }
 .top{
+  border:none;
   display: inline-flex;
 }
 .date{

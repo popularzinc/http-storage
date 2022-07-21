@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="com-issue.css">
+    <div class="top-bar">
+      <input class="search-bar" type="text" placeholder="Search..">
+    </div>
+  </head>
+  <body>
+    <div class="project-top">
+      <a href="/">
+        <img class="title-folder" src="/pics/title-folder.png">
+      </a>
+      <span class="title">Completed Issues</span>
+    </div>
+
+    <div class="options-bar">
+      <span class="option-selected">Data</span>
+      <span class="option">Settings</span>
+    </div>
+    <div class="container">
+      <!---->
+      <div style="display:inline-flex;">
+        <div class="info-top">Title</div>
+        <div class="issue-title-top">
+          TITLE
+      </div></div><br>
+
+      <div style="display:inline-flex;">
+        <div class="info">Start Date</div>
+        <div class="issue-title">
+          START_DATE
+      </div></div><br>
+
+      <div style="display:inline-flex;">
+        <div class="info">Finish Date</div>
+        <div class="issue-title">
+          END_DATE
+      </div></div><br>
+      <div style="display:inline-flex;">
+        <div class="info">Description</div>
+        <div class="issue-desc">
+          DESC
+      </div></div><br>
+      <div style="display:inline-flex;">
+        <div class="info-bottom">File</div>
+        <div class="issue-file">
+        FILE
+      </div></div><br><br><br>
+      <!--NEW_FILS
+      <br><br><br>-->
+      <div class="info-data">Data</div>
+      <div class="issue-data">
+        DATA
+      </div><br>
+      <br><br><br>
+      <div class="code-container">
+        <textrea readonly="true" class="code1">
+          CODE1
+        </textrea>
+        <textrea readonly="true" class="code2">
+          CODE2
+        </textrea>
+      </div>
+      <div class="danger">
+        <form action="/deletecomissue/PROJECT/TITLE" method=POST>
+          <input type=text name="name" placeholder="TITLE">
+          <input type=submit value="Delete Issue">
+        </form>
+      </div>
+    <!---->
+
+    </div>
+  </body>
+</html>
